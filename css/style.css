@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ffffff, #cecdcd, #085db3, #095fce);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.bank-card {
+    background: linear-gradient(135deg, #001a3d 0%, #003366 70%, #001a3d 100%);
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 51, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.bank-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 51, 102, 0.4);
+}
+
+.transaction-card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 51, 102, 0.1);
+    border: 1px solid rgba(0, 51, 102, 0.1);
+}
+
+.btn-primary {
+    background-color: #003366;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #001a3d;
+}
+
+.btn-danger {
+    background-color: #FF5252;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #e04040;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #3d8b40;
+}
+
+.floating-input {
+    transition: all 0.2s ease;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.floating-input:focus {
+    border-color: #003366;
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.animate-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}

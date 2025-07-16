@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ACME - Crear cuenta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="/logo/logo.jpeg" alt="Logo ACME" class="logo-img" />
+  </div>
+
+  <div class="form-container">
+    <h2>Crear cuenta nueva</h2>
+
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" placeholder="Ej: Juan Pérez" />
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" placeholder="Ej: ejemplo@correo.com" />
+
+    <label for="telefono">Número de celular</label>
+    <input type="tel" id="telefono" placeholder="Ej: 3001234567" />
+
+    <label for="tipo-doc">Tipo de documento</label>
+    <select id="tipo-doc">
+      <option value="cc">Cédula de Ciudadanía (CC)</option>
+      <option value="ce">Cédula de Extranjería (CE)</option>
+      <option value="ti">Tarjeta de Identidad (TI)</option>
+      <option value="pa">Pasaporte (PA)</option>
+    </select>
+
+    <label for="doc-numero">Número de documento</label>
+    <input type="text" id="doc-numero" placeholder="Ej: 1234567890" />
+
+    <label for="contrasena">Contraseña</label>
+    <input type="password" id="contrasena" placeholder="Mínimo 6 caracteres" />
+
+    <label for="confirmar">Confirmar contraseña</label>
+    <input type="password" id="confirmar" placeholder="Repite la contraseña" />
+
+    <div class="error" id="error"></div>
+
+    <button class="btn" onclick="crearCuenta()">Crear cuenta</button>
+
+    <div class="extra-actions">
+      <a href="index.html" class="link">¿Ya tienes una cuenta? Iniciar sesión</a>
+    </div>
+  </div>
+  <script src="/js/crear-cuenta.js"></script>
+
+  <div class="footer">by ACME</div>
